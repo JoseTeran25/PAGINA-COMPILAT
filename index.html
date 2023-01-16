@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compialdores</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body>
+        <h1 class="mio">COMPILADORES <br>
+        </h1>
+        <div>
+            <fieldset>
+                <legend>LENGUAJES DE PROGRAMACION</legend>
+                <p>Un lenguaje de programación es un lenguaje formal, es decir, un lenguaje con reglas 
+                    gramaticales bien definidas, que le proporciona  a un programador, la capacidad de programar 
+                    una serie de instrucciones o secuencias de órdenes en forma de algoritmo con el fin de controlar 
+                    el comportamiento físico o lógico de un sistema informático, de manera que se puedan obtener diversas
+                    clases de datos o ejecutar determinadas tareas.
+                    <br/><br/>
+                    Diferencia entre un lenguaje compilado e interpretado:
+                    <br/>
+                    <ul>
+                        <li>Compilado: En un lenguaje compilado, la máquina de destino traduce directamente el programa. 
+                        Las instrucciones vienen enviadas directamente al procesador. Un lenguaje compilado genera un 
+                        file binario no modificabl</li>
+                        <br/>
+                        <li>Interpretado: En un lenguaje interpretado, el código fuente no es directamente traducido por 
+                            la máquina de destino. Las instrucciones deben traducirse antes de llegar al procesador.
+                            El programa debe traducirse cada vez aumentando el tiempo de ejecución.</li>
+                    </ul>
+                    <br/>
+                    <br/>
+                    Algunos ejemplos son:
+                </p>
+
+
+                <table>
+                    <tr>
+                        <th>LENGUAJE</th>
+                        <th>COMPILADO / INTERPRETE</th>
+                        <th>FACILIDAD (SINTAXIS)</th>
+                        <th>MULTIPLATAFORMA</th>
+                        <th>CONCURRENCIA</th>
+                    </tr>
+                    <tr>
+                        <td>JAVA</td>   
+                        <td>C,I</td>
+                        <td>SI</td>
+                        <td>SI</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>Javascript</td>   
+                        <td>I</td>
+                        <td>SI</td>
+                        <td>SI</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>GO</td>   
+                        <td>C</td>
+                        <td>SI</td>
+                        <td>SI</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>   
+                        <td>C</td>
+                        <td> MAS O MENOS</td>
+                        <td>SI</td>
+                        <td>SI</td>
+                    </tr>
+                    <tr>
+                        <td>C++</td>   
+                        <td>C</td>
+                        <td> MAS O MENOS</td>
+                        <td>SI</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>PHYTON</td>   
+                        <td>I</td>
+                        <td>SI</td>
+                        <td>SI</td>
+                        <td>SI</td>
+                    </tr>
+                </table>
+            </fieldset>
+            <br/>
+    
+            <fieldset>
+                <legend>¿QUÉ ES UN COMPILADOR?</legend>
+                <p>
+                    Un compilador es un programa que traduce código fuente escrito en un lenguaje de alto nivel como Java, 
+                    a un lenguaje legible por la máquina llamado código objeto, lenguaje de destino o incluso lenguaje 
+                    ensamblador, además, informa de errores al leer el código.
+                </p>
+                <img src="compilador.jpg" width="600" height="300" />
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>TIPOS DE COMPILADORES</legend>
+                <ul>
+                    <li>Compiladores de una sola pasada: Generan el código máquina a partir de una única lectura del código fuente</li>
+                    <br/>
+                    <li>Compiladores de varias pasadas: necesitan leer el código fuente varias veces antes de poder producir el código máquina. </li>
+                    <br/>
+                    <li>Compiladores cruzados: crean código para una plataforma diferente a la que se está utilizando para compilar el código original. Por ejemplo, se puede usar un compilador 
+                        cruzado para generar código para una plataforma de 64 bits en una computadora de 32 bits.</li>
+                    <br/>
+                    <li>Compiladores JIT (Just-in-Time): generan código de máquina en tiempo de ejecución en lugar de generarlo antes de ejecutar el programa. Esto puede mejorar el rendimiento al permitir que el compilador
+                        optimice el código específico para la máquina en la que se está ejecutando el programa.</li>
+                    <br/>
+                    <li>Compiladores incrementales: generan un código objeto instrucción por instrucción (en vez de hacerlo para todo el programa) cuando el usuario teclea cada orden individual</li>
+                    <br/>
+                    <li>Compiladores de lenguajes funcionales: convierten código escrito en un lenguaje funcional (como Haskell o Lisp) a lenguaje de máquina. Estos compiladores son especializados en lenguajes 
+                        con una sintaxis y semántica diferentes a los lenguajes imperativos</li>
+                    <br/>
+                    <li>Compiladores de scripts: convierten código escrito en un lenguaje de script (como JavaScript o PHP) a código ejecutable. Estos compiladores son utilizados para crear programas que se ejecutan 
+                        en entornos web o de interpretación.</li>
+                </ul>
+            </fieldset>
+            <br/>
+            <fieldset>
+                <legend>COMPONENTES DE UN COMPILADOR</legend>
+                <p>Los componentes de un compilador son:</p>
+                <ol>
+                    <li>Analizador léxico</li>
+                    <li>Análisis sintáctico</li>
+                    <li>Análisis semántico</li>
+                    <li>Generación y optimización de código intermedio</li>
+                    <li>Generador de código objeto</li>
+                    <li>Tabla de Símbolos</li>
+                    <li>Gestor de errores</li>
+                </ol>
+                <fieldset>
+                    <legend>1. ANALIZADOR LÉXICO</legend>
+                    <p>
+                        Es la primera fase de un compilador, aquí se lee una secuencia de caracteres de izquierda a derecha del programa fuente, reconocer subcadenas que correspondan
+                        a símbolos del lenguaje y retornar los tokens correspondientes y sus atributos.
+                        <br/>
+                        <br/>
+                        <img src="analizador.jfif" width="300" height="300">
+                    </p>
+                </fieldset>
+            </fieldset>
+            <br/>
+            
+        </div>
+                
+    </body>
+</html>

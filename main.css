@@ -1,0 +1,54 @@
+body{
+  background-color: rgb(232, 222, 250);
+  color: black;
+  font-size: 20px;
+}
+.mio{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+
+ul li {
+  color: black;
+}
+
+fieldset legend{
+  color: black;
+  font-size: 30px;
+  font-style: italic;
+}
+fieldset img{
+  display: block;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border: 1px solid #000;
+  
+}
+th, td {
+  width: 25%;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #000;
+  border-radius: 4px;
+  border-collapse: collapse;
+  padding: 0.3em;
+  caption-side: bottom;
+  background-color: white;
+}
+caption {
+  padding: 0.3em;
+  color: rgb(0, 0, 0);
+  background: #000;
+}
+th {
+  background: rgb(218, 211, 211);
+}
+tr{
+  font-style: italic;
+}
